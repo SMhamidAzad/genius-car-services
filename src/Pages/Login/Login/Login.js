@@ -17,6 +17,7 @@ const Login = () => {
     const navigateRegister= event =>{
         navigate("/register")
     }
+   
     return (
         <div className='mx-auto w-50'>
             <h2 className='text-primary text-center mt-3'>Please Login Here:</h2>
