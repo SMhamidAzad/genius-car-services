@@ -40,7 +40,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p>New to Genius Car? <span style={{cursor: 'pointer'}} onClick={navigateRegister} className='text-danger'>Please Register</span></p>
+            <p>New to Genius Car? <span style={{cursor: 'pointer'}} onClick={navigateRegister} className='text-danger fw-bold'>Please Register</span></p>
         </div>
     );
 };
