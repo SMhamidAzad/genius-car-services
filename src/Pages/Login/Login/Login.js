@@ -21,6 +21,13 @@ const Login = () => {
     if(user){
         navigate(from, { replace: true });
     }
+    let errorElement;
+    if (error) {   
+        errorElement=<div>
+          <p className='text-danger'>Error: {error?.message}</p>
+        </div>
+      
+    }
     const handleSubmit = (event)=>{
         event.preventDefault();
         const email = emailRef.current.value;
@@ -51,6 +58,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
+            {errorElement}
             <p>New to Genius Car? <span style={{cursor: 'pointer'}} onClick={navigateRegister} className='text-danger fw-bold'>Please Register</span></p>
             <SocialLogin></SocialLogin>
         </div>
